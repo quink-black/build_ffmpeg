@@ -5,35 +5,36 @@ ffmpeg_config="\
     --enable-pic \
     --enable-debug \
     --disable-doc \
-    --disable-avdevice \
-    --disable-swresample \
-    --disable-swscale \
-    --disable-postproc \
-    --disable-avfilter \
-    --disable-avresample \
-    --disable-encoders \
-    --disable-decoders \
-    --enable-decoder=h264 \
-    --enable-decoder=hevc \
-    --disable-parsers \
-    --enable-parser=aac \
-    --enable-parser=aac_latm \
-    --enable-parser=h264 \
-    --enable-parser=hevc \
-    --disable-bsfs \
-    --enable-bsf=h264_metadata \
-    --enable-bsf=h264_mp4toannexb \
-    --enable-bsf=hevc_metadata \
-    --enable-bsf=hevc_mp4toannexb \
-    --enable-bsf=trace_headers \
-    --disable-muxers \
-    --disable-demuxers \
-    --enable-demuxer=mov \
-    --enable-demuxer=aac \
-    --enable-demuxer=h264 \
-    --enable-demuxer=hevc \
-    --enable-demuxer=m4v \
-    --enable-muxer=mp4 \
-    --enable-muxer=mov \
-    --disable-network \
 "
+#    --disable-avdevice \
+#    --disable-swresample \
+#    --disable-swscale \
+#    --disable-postproc \
+#    --disable-avfilter \
+#    --disable-avresample \
+#    --disable-encoders \
+#    --disable-decoders \
+#    --enable-decoder=h264 \
+#    --enable-decoder=hevc \
+#    --disable-parsers \
+#    --enable-parser=aac \
+#    --enable-parser=aac_latm \
+#    --enable-parser=h264 \
+#    --enable-parser=hevc \
+#    --disable-bsfs \
+#    --enable-bsf=h264_metadata \
+#    --enable-bsf=h264_mp4toannexb \
+#    --enable-bsf=hevc_metadata \
+#    --enable-bsf=hevc_mp4toannexb \
+#    --enable-bsf=trace_headers \
+#    --disable-muxers \
+#    --disable-demuxers \
+#    --enable-demuxer=mov \
+#    --enable-demuxer=aac \
+#    --enable-demuxer=h264 \
+#    --enable-demuxer=hevc \
+#    --enable-demuxer=m4v \
+#    --enable-muxer=mp4 \
+#    --enable-muxer=mov \
+#    --disable-network \
+#"
