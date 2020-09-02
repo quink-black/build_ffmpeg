@@ -13,8 +13,8 @@ checkfail()
     fi
 }
 
-if [ -z "$ANDROID_NDK" -o -z "$ANDROID_SDK" ]; then
-   diagnostic "You must define ANDROID_NDK, ANDROID_SDK before starting."
+if [ -z "$ANDROID_NDK" ]; then
+   diagnostic "You must define ANDROID_NDK before starting."
    diagnostic "They must point to your NDK and SDK directories."
    exit 1
 fi
