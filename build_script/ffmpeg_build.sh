@@ -53,8 +53,7 @@ ffmpeg_extra_config="--disable-linux-perf \
     --enable-pic \
     --enable-libx264 \
     --enable-gpl \
-    --extra-cflags=-I$install_dir/include \
-    --extra-ldflags=-L$install_dir/lib/ \
+    --pkg-config=pkg-config \
 "
 
 if [ $ANDROID_ABI == "arm64-v8a" ]; then
