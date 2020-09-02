@@ -38,6 +38,8 @@ pushd $ffmpeg_build
 
 source $common_config_path/ffmpeg_config
 
+export PKG_CONFIG_PATH=$install_dir/lib/pkgconfig
+
 #cf. https://github.com/android-ndk/ndk/issues/630
 ffmpeg_extra_config="--disable-linux-perf \
     --cc=$CC \
@@ -49,6 +51,10 @@ ffmpeg_extra_config="--disable-linux-perf \
     --disable-programs \
     --enable-static --disable-shared \
     --enable-pic \
+    --enable-libx264 \
+    --enable-gpl \
+    --extra-cflags=-I$install_dir/include \
+    --extra-ldflags=-L$install_dir/lib/ \
 "
 
 if [ $ANDROID_ABI == "arm64-v8a" ]; then
