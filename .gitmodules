@@ -4,3 +4,9 @@
 [submodule "third_party/x264"]
 	path = third_party/x264
 	url = https://code.videolan.org/videolan/x264.git
+[submodule "third_party/srt"]
+	path = third_party/srt
+	url = https://github.com/Haivision/srt.git
+[submodule "third_party/mbedtls"]
+	path = third_party/mbedtls
+	url = https://github.com/ARMmbed/mbedtls.git

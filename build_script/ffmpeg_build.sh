@@ -49,11 +49,13 @@ ffmpeg_extra_config="--disable-linux-perf \
     --arch=$ANDROID_ABI \
     --cross-prefix=$CROSS_TOOLS \
     --disable-programs \
-    --enable-static --disable-shared \
+    --enable-shared --disable-static \
     --enable-pic \
     --enable-libx264 \
     --enable-gpl \
     --pkg-config=pkg-config \
+    --enable-libsrt \
+    --extra-ldflags=-lm \
 "
 
 if [ $ANDROID_ABI == "arm64-v8a" ]; then
